@@ -1,0 +1,518 @@
+EESchema Schematic File Version 4
+LIBS:HDDriver-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor:TIP122 Q1
+U 1 1 5B203E93
+P 4800 4150
+F 0 "Q1" H 5041 4196 50  0000 L CNN
+F 1 "TIP122" H 5041 4105 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 5050 4075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 4800 4150 50  0001 L CNN
+	1    4800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5B203FFD
+P 4900 4350
+F 0 "#PWR0101" H 4900 4100 50  0001 C CNN
+F 1 "GND" H 4905 4177 50  0000 C CNN
+F 2 "" H 4900 4350 50  0001 C CNN
+F 3 "" H 4900 4350 50  0001 C CNN
+	1    4900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5B204401
+P 4450 4150
+F 0 "R1" V 4243 4150 50  0000 C CNN
+F 1 "2K7" V 4450 4150 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 4380 4150 50  0001 C CNN
+F 3 "" H 4450 4150 50  0001 C CNN
+	1    4450 4150
+	0    1    1    0   
+$EndComp
+Text GLabel 5000 3900 2    50   Input ~ 0
+R
+Wire Wire Line
+	5000 3900 4900 3900
+Wire Wire Line
+	4900 3900 4900 3950
+Wire Wire Line
+	4900 3850 4900 3900
+Connection ~ 4900 3900
+$Comp
+L power:+12V #PWR0102
+U 1 1 5B204BC8
+P 4900 3550
+F 0 "#PWR0102" H 4900 3400 50  0001 C CNN
+F 1 "+12V" H 4915 3723 50  0000 C CNN
+F 2 "" H 4900 3550 50  0001 C CNN
+F 3 "" H 4900 3550 50  0001 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 4150 0    50   Input ~ 0
+R_CTRL
+$Comp
+L Transistor:TIP122 Q2
+U 1 1 5B205106
+P 6300 4150
+F 0 "Q2" H 6541 4196 50  0000 L CNN
+F 1 "TIP122" H 6541 4105 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6550 4075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 6300 4150 50  0001 L CNN
+	1    6300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5B20510D
+P 6400 4350
+F 0 "#PWR0103" H 6400 4100 50  0001 C CNN
+F 1 "GND" H 6405 4177 50  0000 C CNN
+F 2 "" H 6400 4350 50  0001 C CNN
+F 3 "" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5B205113
+P 5950 4150
+F 0 "R2" V 5743 4150 50  0000 C CNN
+F 1 "2K7" V 5950 4150 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 5880 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	0    1    1    0   
+$EndComp
+Text GLabel 6500 3900 2    50   Input ~ 0
+S
+Wire Wire Line
+	6500 3900 6400 3900
+Wire Wire Line
+	6400 3900 6400 3950
+Wire Wire Line
+	6400 3850 6400 3900
+Connection ~ 6400 3900
+$Comp
+L power:+12V #PWR0104
+U 1 1 5B205126
+P 6400 3450
+F 0 "#PWR0104" H 6400 3300 50  0001 C CNN
+F 1 "+12V" H 6415 3623 50  0000 C CNN
+F 2 "" H 6400 3450 50  0001 C CNN
+F 3 "" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 4150 0    50   Input ~ 0
+S_CTRL
+$Comp
+L Transistor:TIP122 Q3
+U 1 1 5B2053F7
+P 7750 4150
+F 0 "Q3" H 7991 4196 50  0000 L CNN
+F 1 "TIP122" H 7991 4105 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 8000 4075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 7750 4150 50  0001 L CNN
+	1    7750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5B2053FE
+P 7850 4350
+F 0 "#PWR0105" H 7850 4100 50  0001 C CNN
+F 1 "GND" H 7855 4177 50  0000 C CNN
+F 2 "" H 7850 4350 50  0001 C CNN
+F 3 "" H 7850 4350 50  0001 C CNN
+	1    7850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R3
+U 1 1 5B205404
+P 7400 4150
+F 0 "R3" V 7193 4150 50  0000 C CNN
+F 1 "2K7" V 7400 4150 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 7330 4150 50  0001 C CNN
+F 3 "" H 7400 4150 50  0001 C CNN
+	1    7400 4150
+	0    1    1    0   
+$EndComp
+Text GLabel 7950 3900 2    50   Input ~ 0
+T
+Wire Wire Line
+	7950 3900 7850 3900
+Wire Wire Line
+	7850 3900 7850 3950
+Wire Wire Line
+	7850 3850 7850 3900
+Connection ~ 7850 3900
+$Comp
+L power:+12V #PWR0106
+U 1 1 5B205417
+P 7850 3550
+F 0 "#PWR0106" H 7850 3400 50  0001 C CNN
+F 1 "+12V" H 7865 3723 50  0000 C CNN
+F 2 "" H 7850 3550 50  0001 C CNN
+F 3 "" H 7850 3550 50  0001 C CNN
+	1    7850 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7250 4150 0    50   Input ~ 0
+T_CTRL
+Wire Wire Line
+	6400 3450 6400 3500
+Text GLabel 6500 3500 2    50   Output ~ 0
+COMMON
+Wire Wire Line
+	6500 3500 6400 3500
+Connection ~ 6400 3500
+Wire Wire Line
+	6400 3500 6400 3550
+$Comp
+L conn:CONN_01X04 P2
+U 1 1 5B205741
+P 8850 3650
+F 0 "P2" H 8800 3900 50  0000 L CNN
+F 1 "MOTOR CONNECT" V 8950 3350 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8850 3650 50  0001 C CNN
+F 3 "" H 8850 3650 50  0000 C CNN
+	1    8850 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 3500 0    50   Output ~ 0
+R
+Text GLabel 8650 3600 0    50   Output ~ 0
+S
+Text GLabel 8650 3700 0    50   Output ~ 0
+T
+Text GLabel 8650 3800 0    50   Input ~ 0
+COMMON
+$Comp
+L device:D D1
+U 1 1 5B205EA6
+P 4900 3700
+F 0 "D1" V 4854 3779 50  0000 L CNN
+F 1 "D" V 4945 3779 50  0000 L CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4900 3700 50  0001 C CNN
+F 3 "" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D2
+U 1 1 5B205F4B
+P 6400 3700
+F 0 "D2" V 6354 3779 50  0000 L CNN
+F 1 "D" V 6445 3779 50  0000 L CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 6400 3700 50  0001 C CNN
+F 3 "" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D3
+U 1 1 5B206085
+P 7850 3700
+F 0 "D3" V 7804 3779 50  0000 L CNN
+F 1 "D" V 7895 3779 50  0000 L CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 7850 3700 50  0001 C CNN
+F 3 "" H 7850 3700 50  0001 C CNN
+	1    7850 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L atmel:ATTINY85-20PU U1
+U 1 1 5B206276
+P 7000 5250
+F 0 "U1" H 7000 5767 50  0000 C CNN
+F 1 "ATTINY85-20PU" H 7000 5676 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 8000 5250 50  0001 C CIN
+F 3 "http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 7000 5250 50  0001 C CNN
+	1    7000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5B2063C4
+P 8400 4950
+F 0 "#PWR0107" H 8400 4800 50  0001 C CNN
+F 1 "+5V" H 8415 5123 50  0000 C CNN
+F 2 "" H 8400 4950 50  0001 C CNN
+F 3 "" H 8400 4950 50  0001 C CNN
+	1    8400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4950 8400 5000
+Wire Wire Line
+	8400 5000 8350 5000
+$Comp
+L power:GND #PWR0108
+U 1 1 5B2065E8
+P 8400 5550
+F 0 "#PWR0108" H 8400 5300 50  0001 C CNN
+F 1 "GND" H 8405 5377 50  0000 C CNN
+F 2 "" H 8400 5550 50  0001 C CNN
+F 3 "" H 8400 5550 50  0001 C CNN
+	1    8400 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5500 8400 5500
+Wire Wire Line
+	8400 5500 8400 5550
+Text GLabel 5550 5000 0    50   Output ~ 0
+R_CTRL
+Wire Wire Line
+	5550 5000 5650 5000
+Text GLabel 5550 5100 0    50   Output ~ 0
+S_CTRL
+Wire Wire Line
+	5550 5100 5650 5100
+Text GLabel 5550 5200 0    50   Output ~ 0
+T_CTRL
+Wire Wire Line
+	5550 5200 5650 5200
+Text GLabel 5550 5500 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	5550 5500 5650 5500
+$Comp
+L conn:CONN_01X05 P1
+U 1 1 5B206F2A
+P 4250 5000
+F 0 "P1" H 4200 4700 50  0000 C CNN
+F 1 "UPLOAD" V 4350 5000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4250 5000 50  0001 C CNN
+F 3 "" H 4250 5000 50  0000 C CNN
+	1    4250 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5B206FEF
+P 4550 5250
+F 0 "#PWR0109" H 4550 5000 50  0001 C CNN
+F 1 "GND" H 4555 5077 50  0000 C CNN
+F 2 "" H 4550 5250 50  0001 C CNN
+F 3 "" H 4550 5250 50  0001 C CNN
+	1    4550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5200 4550 5200
+Wire Wire Line
+	4550 5200 4550 5250
+Text GLabel 4550 5100 2    47   Output ~ 0
+T_CTRL
+Wire Wire Line
+	4450 5100 4550 5100
+Text GLabel 4550 5000 2    47   Output ~ 0
+S_CTRL
+Wire Wire Line
+	4450 5000 4550 5000
+Text GLabel 4550 4900 2    47   Output ~ 0
+R_CTRL
+Wire Wire Line
+	4550 4900 4450 4900
+Text GLabel 4550 4750 2    47   Output ~ 0
+~RESET
+Wire Wire Line
+	4500 4800 4500 4750
+Wire Wire Line
+	4500 4750 4550 4750
+Wire Wire Line
+	4500 4800 4450 4800
+$Comp
+L regul:L7805 U2
+U 1 1 5B20A5D3
+P 8800 4250
+F 0 "U2" H 8800 4492 50  0000 C CNN
+F 1 "L7805" H 8800 4401 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 8825 4100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8800 4200 50  0001 C CNN
+	1    8800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0110
+U 1 1 5B20A7B2
+P 8400 4200
+F 0 "#PWR0110" H 8400 4050 50  0001 C CNN
+F 1 "+12V" H 8415 4373 50  0000 C CNN
+F 2 "" H 8400 4200 50  0001 C CNN
+F 3 "" H 8400 4200 50  0001 C CNN
+	1    8400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4200 8400 4250
+Wire Wire Line
+	8400 4250 8500 4250
+$Comp
+L power:GND #PWR0111
+U 1 1 5B20AC29
+P 8800 4650
+F 0 "#PWR0111" H 8800 4400 50  0001 C CNN
+F 1 "GND" H 8805 4477 50  0000 C CNN
+F 2 "" H 8800 4650 50  0001 C CNN
+F 3 "" H 8800 4650 50  0001 C CNN
+	1    8800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5B20ACA3
+P 9200 4200
+F 0 "#PWR0112" H 9200 4050 50  0001 C CNN
+F 1 "+5V" H 9215 4373 50  0000 C CNN
+F 2 "" H 9200 4200 50  0001 C CNN
+F 3 "" H 9200 4200 50  0001 C CNN
+	1    9200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4200 9200 4250
+Wire Wire Line
+	9200 4250 9100 4250
+Wire Wire Line
+	8400 4300 8400 4250
+Connection ~ 8400 4250
+Wire Wire Line
+	8400 4500 8400 4600
+Wire Wire Line
+	8400 4600 8800 4600
+Wire Wire Line
+	8800 4600 8800 4550
+Wire Wire Line
+	9200 4300 9200 4250
+Connection ~ 9200 4250
+$Comp
+L device:CP_Small C1
+U 1 1 5B20D509
+P 8400 4400
+F 0 "C1" H 8488 4446 50  0000 L CNN
+F 1 "100u" H 8200 4300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 8400 4400 50  0001 C CNN
+F 3 "" H 8400 4400 50  0001 C CNN
+	1    8400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP_Small C2
+U 1 1 5B20D5DD
+P 9200 4400
+F 0 "C2" H 9288 4446 50  0000 L CNN
+F 1 "10u" H 9250 4300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 9200 4400 50  0001 C CNN
+F 3 "" H 9200 4400 50  0001 C CNN
+	1    9200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4500 9200 4600
+Wire Wire Line
+	9200 4600 8800 4600
+Connection ~ 8800 4600
+Wire Wire Line
+	8800 4600 8800 4650
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5B20FDC6
+P 9200 4650
+F 0 "#FLG0102" H 9200 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 9200 4824 50  0001 C CNN
+F 2 "" H 9200 4650 50  0001 C CNN
+F 3 "" H 9200 4650 50  0001 C CNN
+	1    9200 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9200 4650 9200 4600
+Connection ~ 9200 4600
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5B210489
+P 8300 4200
+F 0 "#FLG0103" H 8300 4275 50  0001 C CNN
+F 1 "PWR_FLAG" H 8300 4374 50  0001 C CNN
+F 2 "" H 8300 4200 50  0001 C CNN
+F 3 "" H 8300 4200 50  0001 C CNN
+	1    8300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4200 8300 4250
+Wire Wire Line
+	8300 4250 8400 4250
+NoConn ~ 5650 5300
+NoConn ~ 5650 5400
+$Comp
+L conn:BARREL_JACK CON1
+U 1 1 5B21346B
+P 9650 3650
+F 0 "CON1" H 9273 3720 50  0000 R CNN
+F 1 "+12VDC" H 9273 3629 50  0000 R CNN
+F 2 "Connectors:BARREL_JACK" H 9650 3650 50  0001 C CNN
+F 3 "" H 9650 3650 50  0000 C CNN
+	1    9650 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR02
+U 1 1 5B213CF5
+P 9300 3500
+F 0 "#PWR02" H 9300 3350 50  0001 C CNN
+F 1 "+12V" H 9315 3673 50  0000 C CNN
+F 2 "" H 9300 3500 50  0001 C CNN
+F 3 "" H 9300 3500 50  0001 C CNN
+	1    9300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3500 9300 3550
+$Comp
+L power:GND #PWR01
+U 1 1 5B214501
+P 9250 3700
+F 0 "#PWR01" H 9250 3450 50  0001 C CNN
+F 1 "GND" H 9300 3550 50  0000 R CNN
+F 2 "" H 9250 3700 50  0001 C CNN
+F 3 "" H 9250 3700 50  0001 C CNN
+	1    9250 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 3550 9350 3550
+Wire Wire Line
+	9250 3700 9300 3700
+Wire Wire Line
+	9300 3700 9300 3650
+Wire Wire Line
+	9300 3650 9350 3650
+Wire Wire Line
+	9300 3700 9300 3750
+Wire Wire Line
+	9300 3750 9350 3750
+Connection ~ 9300 3700
+$EndSCHEMATC
